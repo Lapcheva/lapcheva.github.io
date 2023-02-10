@@ -1,0 +1,87 @@
+.slide-holder{
+  &__box{
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0 0 30px;
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+    }
+  }
+  &__pic{
+    width: 400px;
+    height: 298px;
+    object-fit: cover;
+    @media screen and (max-width: 1919px) {
+      height: 344px;
+    }
+    @media screen and (max-width: 1439px) {
+      height: 528px;
+    }
+    @media screen and (max-width: 1023px) {
+      height: 500px;
+      width: 100%;
+      align-self: center;
+    }
+  }
+  &__txt{
+    background: $light-grey;
+    padding: 30px;
+  }
+  &__quote-title{
+    @include hero-title;
+    margin: 0 0 30px;
+    @media screen and (max-width: 1023px) {
+      font-size: 30px;
+      line-height: 34px;
+    }
+  }
+  &__name{
+    @include h4-title;
+    color: $txt-grey;
+    margin: 0 0 6px;
+    text-transform: capitalize;
+  }
+  &__post{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $txt-grey;
+  }
+}
+.slick-initialized .slick-slide {
+  display: flex;
+}
+.slick-dots {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  li {
+    display:inline-block;
+    margin: 0 15px 0 0;
+    &:last-child{
+      margin: 0;
+    }
+    &.slick-active {
+      button {
+        background-color: $active;
+        opacity: 100%;
+      }
+    }
+    button {
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+      background-color:$active;
+      opacity: 20%;
+      border:none;
+      width: 16px;
+      height: 16px;
+      border-radius:50%;
+      cursor: pointer;
+    }
+    :hover{
+      background-color: $active;
+    }
+  }
+}

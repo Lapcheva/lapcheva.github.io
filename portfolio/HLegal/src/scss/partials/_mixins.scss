@@ -1,0 +1,29 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@mixin hero-title{
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  background: $redtxt-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin h4-title{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+@mixin h3-title{
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+}
+@mixin small-paragraph{
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: black;
+}

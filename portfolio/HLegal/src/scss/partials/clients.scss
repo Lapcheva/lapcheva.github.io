@@ -1,0 +1,81 @@
+.clients-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title{
+    @include h4-title;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $main;
+    padding: 0 0 30px;
+    margin: 0;
+  }
+  &__list{
+    @include reset-list;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    @media screen and (max-width: 1919px) {
+      border-radius: 0;
+    }
+  }
+  &__items{
+    width: 25%;
+    @media screen and (max-width: 1023px) {
+      width: 33.33%;
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      &:not(:nth-last-child(n+7)){
+        display: none;
+      }
+    }
+  }
+  &__link{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    &_maritime{
+      background-color: #1C4280;
+    }
+    &_nato-blue{
+      background-color: #143646;
+    }
+    &_fire-orange{
+      background-color: #F48B30;
+    }
+    &_royal-purple{
+      background-color: #9E4DC3;
+    }
+    &_orange{
+      background-color: #FD9339;
+    }
+    &_light-grey{
+      background-color: #E2E2E4;
+    }
+    &_crimson{
+      background-color: #C71C36;
+    }
+    &_pale-blue{
+      background-color: #DCF3F9;
+    }
+    &_pale-grey{
+      background-color: #EAEAEA;
+    }
+    &_violet{
+      background-color: #282240;
+    }
+    &_marine-blue{
+      background-color: #1D4568;
+    }
+    &_black{
+      background-color: #000000;
+    }
+  }
+}
